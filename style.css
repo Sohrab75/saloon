@@ -83,6 +83,14 @@
     height: 4rem;
     border-radius: 50%;
 }
+.expert{
+    width: 100%;
+    height: 30rem;
+}
+.expert > .card{
+    height: 15rem;
+    width: 15rem;
+}
 
 .expert > .card > .card-img{
     width: 15rem;

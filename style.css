@@ -8,7 +8,7 @@
     width: 100%;
     height: 30rem;
     background-color:#a38463;
-    background-image: url(./kindpng_5646674.png);
+    background-image:url(./kindpng_5646674.png);
     background-position:center top ;
     background-size: 40rem 30rem;
     background-repeat: no-repeat;
@@ -21,29 +21,48 @@
 }
 
 .two{
-
+    margin-top: 20px;
     width: 100%;
-    height: 30rem;
-    /* background-image: url(./kindpng_3060929.png);
-    background-position:center left ;
-    background-size: 40rem 30rem;
-    background-repeat: no-repeat; */
+    height: 43rem;
+    background-image: url(./kindpng_3060929.png);
+    background-position:center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-group{
     width: 20rem;
     height: 5rem;
 }
-.card{
-    margin: 10px;
+/* about us css */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
-.card1{
+.about>.card{
+    background-color: transparent;
+    margin-top: 25%;
+    color:#a38463;
+}
+/* .card1{
     margin-left: 15%;
-}
+} */
 .card > .card-img{
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     
 }
+
+/* services css */
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .menu > .card-img{
     width: 5rem;
     height: 5rem;
@@ -63,6 +82,8 @@
 .menu-item:hover{
     background-color: #a38463;
 }
+
+/* review css */
 .review{
     width: 100%;
     height: 30rem;
@@ -75,6 +96,12 @@
     border: 2px solid black;
     
 }
+.rev{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+}
 .rev > .card{
     background-color: transparent;
 }
@@ -83,18 +110,12 @@
     height: 4rem;
     border-radius: 50%;
 }
-.expert{
-    width: 100%;
-    height: 30rem;
-}
-.expert > .card{
-    height: 15rem;
-    width: 15rem;
-}
 
-.expert > .card > .card-img{
-    width: 15rem;
-    height: 15rem;
+/* expert css */
+.barber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .query{
     margin-top: 2rem;
@@ -120,4 +141,42 @@ form{
 .footer > .row > .card{
     width: 20rem;
     padding: 5px;
+}
+
+@media (max-width:768px){
+    .card{
+        display: block;
+        width: 15rem;
+    }
+    .container{
+        margin-top: 10px;
+    }
+    .expert > .card{
+        width: 10rem;
+        height: 10rem;
+    }
+    .expert > .card > .card-img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .query{
+        display: block;
+        margin-top: 20px ;
+    }
+    
+    .rev{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .rev > .card {
+        height: 8rem;
+        width: 100%;
+    }
+
 }
